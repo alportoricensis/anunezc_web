@@ -38,6 +38,7 @@ h3 {
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 1.5vw;
 }
 
 .paragraph1 {
@@ -209,6 +210,12 @@ h3 {
     color: #658C69;
     text-decoration: underline;
     text-decoration-thickness: 3px;
+}
+
+.academicsTabMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .academicsTab {

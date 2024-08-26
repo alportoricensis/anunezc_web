@@ -66,7 +66,7 @@ export default function Projects() {
         <section id="Projects">
             <div className="aboutMeContainer">
                 <h2>
-                    Course Projects
+                    Projects
                 </h2>
                 <div className="skillsContainer">
                     <div className="aboutMeContainer">

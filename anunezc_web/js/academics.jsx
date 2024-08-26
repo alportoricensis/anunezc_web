@@ -1,12 +1,13 @@
 import React, { useRef, useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
-import utc from "dayjs/plugin/utc";
 import Carat from "./carat";
 
 
 export default function Academics() {
+    const buttonRef = useRef(null);
+    useEffect(() => {
+        buttonRef.current.click();
+    }, []);
+
     const loadClasses = (courseName) => {
         var index;
     
@@ -23,6 +24,7 @@ export default function Academics() {
         }
     
         document.getElementById(courseName).style.display = "block";
+        document.getElementById("academicsTabHead").innerText = (courseName === "ComputerScience") ? "Computer Science" : courseName;
     }
 
     return (
@@ -39,19 +41,21 @@ export default function Academics() {
                         <br></br>
                         Bachelors of Science in Engineering in Computer Science with a Minor in Mathematics
                     </p>
-                    <div className="academicsTab">
-                        <button className="academicsLinks" onClick={() => loadClasses("ComputerScience")}>
-                            Computer Science
-                        </button>
-                        <button className="academicsLinks" onClick={() => loadClasses("Mathematics")}>
-                            Mathematics
-                        </button>
-                        <button className="academicsLinks" onClick={() => loadClasses("Miscellaneous")}>
-                            Miscellaneous
-                        </button>
+                    <div className="academicsTabMenu">
+                        <h3 id="academicsTabHead">Computer Science</h3>
+                        <div className="academicsTab">
+                            <button className="academicsLinks" ref={buttonRef} onClick={() => loadClasses("ComputerScience")}>
+                                Computer Science
+                            </button>
+                            <button className="academicsLinks" onClick={() => loadClasses("Mathematics")}>
+                                Mathematics
+                            </button>
+                            <button className="academicsLinks" onClick={() => loadClasses("Miscellaneous")}>
+                                Miscellaneous
+                            </button>
+                        </div>
                     </div>
                     <div id="ComputerScience" className="classContent" style={{display: "block"}}>
-                        <h3>Computer Science</h3>
                         <dl className="courseList">
                             <dt><Carat courseID={"eecs388"}></Carat> | EECS 388 | Introduction to Computer Security | WI25 | TBD </dt>
                             <dd className="courseData" id="eecs388" style={{display: "block"}}>An introductory course on computer security. Planned for WI25.
@@ -153,7 +157,6 @@ export default function Academics() {
                         </dl>
                     </div>
                     <div id="Mathematics" className="classContent" style={{display: "none"}}>
-                        <h3>Mathematics</h3>
                         <dl className="courseList">
                             <dt><Carat courseID={"math561"}></Carat> | MATH 561 | Introduction to Linear Programming | WI24 | B+ </dt>
                             <dd className="courseData" id="math561" style={{display: "none"}}>Graduate level course in optimization. Topics included:
@@ -195,7 +198,6 @@ export default function Academics() {
                         </dl>
                     </div>
                     <div id="Miscellaneous" className="classContent" style={{display: "none"}}>
-                        <h3>Miscellaneous</h3>
                         <dl className="courseList">
                             <dt><Carat courseID={"acc300"}></Carat> | ACC 300 | Financial Accounting | WI25 | TBD </dt>
                             <dd className="courseData" id="acc300" style={{display: "none"}}>An introductory course on accounting. Planned for WI25.
