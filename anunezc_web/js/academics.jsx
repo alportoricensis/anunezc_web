@@ -6,6 +6,7 @@ export default function Academics() {
     const buttonRef = useRef(null);
     useEffect(() => {
         buttonRef.current.click();
+        buttonRef.current.focus();
     }, []);
 
     const loadClasses = (courseName) => {
@@ -58,19 +59,44 @@ export default function Academics() {
                     <div id="ComputerScience" className="classContent" style={{display: "block"}}>
                         <dl className="courseList">
                             <dt><Carat courseID={"eecs388"}></Carat> | EECS 388 | Introduction to Computer Security | WI25 | TBD </dt>
-                            <dd className="courseData" id="eecs388" style={{display: "block"}}>An introductory course on computer security. Planned for WI25.
+                            <dd className="courseData" id="eecs388" style={{display: "block"}}>An introductory course on computer security. Planned for WI25. Topics include:
+                                <ul className="courseList">
+                                    <li>Security fundamentals: confidentiality, message integrity, public-key cryptography, and randomness</li>
+                                    <li>Web and network security: introduction to web concepts, web attacks and defenses, networking introduction, HTTPS attacks and defenses, and passwords</li>
+                                    <li>Host and application security: malware, access control and isolation, application bugs, and digital forensics</li>
+                                    <li>Security in the real world: data center security, machine learning security, and privacy</li>
+                                </ul>
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"eecs489"}></Carat> | EECS 489 | Computer Networks | WI25 | TBD </dt>
-                            <dd className="courseData" id="eecs489" style={{display: "none"}}>A top-down course on how networks operate and network applications are written. Planned for WI25.
+                            <dd className="courseData" id="eecs489" style={{display: "none"}}>A top-down course on how networks operate and network applications are written. Planned for WI25. Topics include:
+                                <ul className="courseList">
+                                    <li>How distributed systems (such as CDNs and cloud computing systems) work at the application layer</li>
+                                    <li>The different transport layer protocols over the internet, and how it runs</li>
+                                    <li>Modern distributed system topics, including datacenter networks, software-defined netowrking (SDN), and programmable networks</li>
+                                    <li>How the ethernet transfers packets at the link layer</li>
+                                </ul>
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"eecs445"}></Carat> | EECS 445 | Introduction to Machine Learning | FA24 | TBD </dt>
-                            <dd className="courseData" id="eecs445" style={{display: "none"}}>An introductory course in Machine Learning. Planned for FA24.
+                            <dd className="courseData" id="eecs445" style={{display: "none"}}>An introductory course in Machine Learning. Planned for FA24. Topics include:
+                                <ul className="courseList">
+                                    <li>Theoretical foundation behind foundational algorithms of machine learning</li>
+                                    <li>Supervised learning (including regression, classification, kernel methods, and neural networks)</li>
+                                    <li>Unsupervised learning (including clustering and autoencoders)</li>
+                                    <li>Generative models and reinforcement learning</li>
+                                    <li>Practical applications of machine learning to computer vision, data mining, speech recognition, text processing, amongst others</li>
+                                </ul>
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"eecs441"}></Carat> | EECS 441 | Mobile App Development for Entrepeneurs | FA24 | TBD </dt>
-                            <dd className="courseData" id="eecs441" style={{display: "none"}}>A major design course on engineering mobile applications. Planned for FA24.
+                            <dd className="courseData" id="eecs441" style={{display: "none"}}>A major design course on engineering mobile applications. Planned for FA24. Topics covered include:
+                                <ul className="courseList">
+                                    <li>Product design</li>
+                                    <li>Project and team management</li>
+                                    <li>Development for iOS and Android utilizing Swift and Kotlin</li>
+                                    <li>Project based on a ride-share platform for non-profit ride-share providers </li>
+                                </ul>
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"eecs482"}></Carat> | EECS 482 | Introduction to Operating Systems | SU24 | A </dt>
@@ -159,7 +185,7 @@ export default function Academics() {
                     <div id="Mathematics" className="classContent" style={{display: "none"}}>
                         <dl className="courseList">
                             <dt><Carat courseID={"math561"}></Carat> | MATH 561 | Introduction to Linear Programming | WI24 | B+ </dt>
-                            <dd className="courseData" id="math561" style={{display: "none"}}>Graduate level course in optimization. Topics included:
+                            <dd className="courseData" id="math561" style={{display: "block"}}>Graduate level course in optimization. Topics included:
                                 <ul className="courseList">
                                     <li>Formulation of mathematical optimization models</li>
                                     <li>Mathematics and algorithms of linear programs, including dual formulation, the Simplex algorithm, and branch-and-bound</li>
@@ -200,7 +226,7 @@ export default function Academics() {
                     <div id="Miscellaneous" className="classContent" style={{display: "none"}}>
                         <dl className="courseList">
                             <dt><Carat courseID={"acc300"}></Carat> | ACC 300 | Financial Accounting | WI25 | TBD </dt>
-                            <dd className="courseData" id="acc300" style={{display: "none"}}>An introductory course on accounting. Planned for WI25.
+                            <dd className="courseData" id="acc300" style={{display: "block"}}>An introductory course on accounting. Planned for WI25.
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"tchnclcm497"}></Carat> | TCHNCLCM 497 | Advanced Technical Communication for Computer Science | FA24 | TBD </dt>

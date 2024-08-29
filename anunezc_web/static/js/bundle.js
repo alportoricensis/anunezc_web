@@ -63,6 +63,7 @@ function Academics() {
   var buttonRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     buttonRef.current.click();
+    buttonRef.current.focus();
   }, []);
   var loadClasses = function loadClasses(courseName) {
     var index;
@@ -125,7 +126,9 @@ function Academics() {
     style: {
       display: "block"
     }
-  }, "An introductory course on computer security. Planned for WI25."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "An introductory course on computer security. Planned for WI25. Topics include:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "courseList"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Security fundamentals: confidentiality, message integrity, public-key cryptography, and randomness"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Web and network security: introduction to web concepts, web attacks and defenses, networking introduction, HTTPS attacks and defenses, and passwords"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Host and application security: malware, access control and isolation, application bugs, and digital forensics"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Security in the real world: data center security, machine learning security, and privacy"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
     courseID: "eecs489"
   }), " | EECS 489 | Computer Networks | WI25 | TBD "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dd", {
     className: "courseData",
@@ -133,7 +136,9 @@ function Academics() {
     style: {
       display: "none"
     }
-  }, "A top-down course on how networks operate and network applications are written. Planned for WI25."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "A top-down course on how networks operate and network applications are written. Planned for WI25. Topics include:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "courseList"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "How distributed systems (such as CDNs and cloud computing systems) work at the application layer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "The different transport layer protocols over the internet, and how it runs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Modern distributed system topics, including datacenter networks, software-defined netowrking (SDN), and programmable networks"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "How the ethernet transfers packets at the link layer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
     courseID: "eecs445"
   }), " | EECS 445 | Introduction to Machine Learning | FA24 | TBD "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dd", {
     className: "courseData",
@@ -141,7 +146,9 @@ function Academics() {
     style: {
       display: "none"
     }
-  }, "An introductory course in Machine Learning. Planned for FA24."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "An introductory course in Machine Learning. Planned for FA24. Topics include:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "courseList"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Theoretical foundation behind foundational algorithms of machine learning"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Supervised learning (including regression, classification, kernel methods, and neural networks)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Unsupervised learning (including clustering and autoencoders)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Generative models and reinforcement learning"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Practical applications of machine learning to computer vision, data mining, speech recognition, text processing, amongst others"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
     courseID: "eecs441"
   }), " | EECS 441 | Mobile App Development for Entrepeneurs | FA24 | TBD "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dd", {
     className: "courseData",
@@ -149,7 +156,9 @@ function Academics() {
     style: {
       display: "none"
     }
-  }, "A major design course on engineering mobile applications. Planned for FA24."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "A major design course on engineering mobile applications. Planned for FA24. Topics covered include:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "courseList"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Product design"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Project and team management"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Development for iOS and Android utilizing Swift and Kotlin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Project based on a ride-share platform for non-profit ride-share providers "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
     courseID: "eecs482"
   }), " | EECS 482 | Introduction to Operating Systems | SU24 | A "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dd", {
     className: "courseData",
@@ -243,7 +252,7 @@ function Academics() {
     className: "courseData",
     id: "math561",
     style: {
-      display: "none"
+      display: "block"
     }
   }, "Graduate level course in optimization. Topics included:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "courseList"
@@ -291,7 +300,7 @@ function Academics() {
     className: "courseData",
     id: "acc300",
     style: {
-      display: "none"
+      display: "block"
     }
   }, "An introductory course on accounting. Planned for WI25."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dt", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_carat__WEBPACK_IMPORTED_MODULE_1__["default"], {
     courseID: "tchnclcm497"
@@ -386,10 +395,20 @@ __webpack_require__.r(__webpack_exports__);
 
 function Carat(_ref) {
   var courseID = _ref.courseID;
+  var mounted = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(false);
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('+'),
     _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
     caratIcon = _useState2[0],
     setCaratIcon = _useState2[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    mounted.current = true;
+    if (courseID === "eecs388" || courseID === "math561" || courseID === "acc300") {
+      setCaratIcon('-');
+    }
+    return function () {
+      mounted.current = false;
+    };
+  }, []);
   var loadDetails = function loadDetails(courseID) {
     var index;
     setCaratIcon(caratIcon === '+' ? '-' : '+');
@@ -752,29 +771,53 @@ function Skills() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TitleText: () => (/* binding */ TitleText),
 /* harmony export */   "default": () => (/* binding */ Title)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
-/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var dayjs_plugin_relativeTime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dayjs/plugin/relativeTime */ "./node_modules/dayjs/plugin/relativeTime.js");
-/* harmony import */ var dayjs_plugin_relativeTime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dayjs_plugin_relativeTime__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var dayjs_plugin_utc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dayjs/plugin/utc */ "./node_modules/dayjs/plugin/utc.js");
-/* harmony import */ var dayjs_plugin_utc__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dayjs_plugin_utc__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
-
-
-function Title() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "titleWrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+function TitleText(_ref) {
+  var title_text = _ref.title_text,
+    delay = _ref.delay;
+  var useTitle = function useTitle(title_text, speed) {
+    var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      titleText = _useState2[0],
+      setTitleText = _useState2[1];
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+      var index = titleText.length;
+      var renderTime = setInterval(function () {
+        if (index < title_text.length) {
+          setTitleText(titleText + title_text.charAt(index));
+          index++;
+        } else {
+          clearInterval(renderTime);
+        }
+      }, speed);
+      return function () {
+        clearInterval(renderTime);
+      };
+    }, [titleText, speed]);
+    return titleText;
+  };
+  var speed = 50;
+  var titleText = useTitle(title_text, speed);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
     className: "titleTitle"
-  }, "print(\"Hello World!\")", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "I'm Alex; nice to meet you!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, titleText);
+}
+;
+function Title() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+    id: "title"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: "titleWrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(TitleText, {
+    title_text: "print(\"Hello World!\")\nI'm Alex; Nice to meet you!"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
     className: "aboutMePicture",
     src: "/static/images/Headshot.jpeg",
     alt: "AboutMe"
