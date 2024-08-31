@@ -8,7 +8,8 @@ export default function Experience() {
             <h2>
                 Resume
             </h2>
-            <div className="academics">
+            <br></br>
+            <div className="skill">
                 <iframe src="/static/pdf/Resume.pdf" className="resumeIframe"></iframe>
             </div>
         </div>
