@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Front End for Alex Nunez's Website",
   "main": "anunezc_web/js/main.jsx",
-  "homepage": "https://main.d11ufq71wc5kcx.amplifyapp.com/#/",
+  "homepage": "https://main.d11ufq71wc5kcx.amplifyapp.com/",
   "author": "Alex Nunez-Carrasquillo",
   "license": "None",
   "repository": {},
@@ -52,6 +52,6 @@
     "react-infinite-scroll-component": ">=6.1.0"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.18.2"
   }
 }
