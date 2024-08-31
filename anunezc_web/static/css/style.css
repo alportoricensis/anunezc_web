@@ -221,13 +221,13 @@ h3 {
 }
 
 .academicsLinks:hover {
-    color: #ffffff;
+    color: #e8dbff;
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
 
 .academicsLinks:active {
-    color: #ffffff;
+    color: #e8dbff;
     text-decoration-thickness: 3px;
 }
 
@@ -272,7 +272,7 @@ h3 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: flex-end;
     background-color: transparent;
     width: auto;
     height: auto;
@@ -315,5 +315,10 @@ h3 {
     background: #ffffff;
     color: #000000;
     border-width: 1px;
+}
+
+.resumeIframe {
+    width: 90vw;
+    height: 100vh;
 }
 

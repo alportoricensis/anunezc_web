@@ -68,7 +68,7 @@ export default function Projects() {
                 <h2>
                     Projects
                 </h2>
-                <div className="skillsContainer">
+                <div className="projNavMenu">
                     <div className="aboutMeContainer">
                         <div className="projects">
                             <div className="projNavMenu">

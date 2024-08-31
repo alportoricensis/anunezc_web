@@ -226,7 +226,11 @@ export default function Academics() {
                     <div id="Miscellaneous" className="classContent" style={{display: "none"}}>
                         <dl className="courseList">
                             <dt><Carat courseID={"acc300"}></Carat> | ACC 300 | Financial Accounting | WI25 | TBD </dt>
-                            <dd className="courseData" id="acc300" style={{display: "block"}}>An introductory course on accounting. Planned for WI25.
+                            <dd className="courseData" id="acc300" style={{display: "block"}}>An introductory course on financial accounting. Planned for WI25. Topics include:
+                                <ul className="courseList">
+                                    <li>Fundamental concenpts and principals of financial accounting</li>
+                                    <li>How the economic activities of a business are reported in a set of financial statements</li>
+                                </ul>
                             </dd>
                             <br></br>
                             <dt><Carat courseID={"tchnclcm497"}></Carat> | TCHNCLCM 497 | Advanced Technical Communication for Computer Science | FA24 | TBD </dt>
